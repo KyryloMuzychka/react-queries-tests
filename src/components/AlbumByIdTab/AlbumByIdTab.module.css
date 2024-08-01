@@ -1,0 +1,14 @@
+.input {
+  display: flex;
+}
+
+.input span {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.input input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
