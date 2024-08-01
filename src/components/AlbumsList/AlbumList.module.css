@@ -1,11 +1,7 @@
-ul {
+.list {
   padding: 0;
 }
 
-li {
+.list li {
   list-style: none;
-}
-
-ul {
-  padding: 0px;  
 }
