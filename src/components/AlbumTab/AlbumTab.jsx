@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { fetchAllAlbums } from "../../api";
 import PaginatedItems from "../PaginatedItems/PaginatedItems";
-// import { PaginatedItems } from "../PaginatedItems/PaginatedItems"
 
 export default function AlbumTab() {
   const [albums, setAlbums] = useState();
