@@ -33,7 +33,7 @@ export default function AlbumByIdTab() {
         </Button>
       </div>
       {album && <SingleAlbum album={album} />}
-      {!album && isVisible && <h2>Not Found!</h2>}
+      {!album && isVisible && <h2 className="text-danger">Not Found!</h2>}
     </div>
   );
 }
