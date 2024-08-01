@@ -2,6 +2,21 @@ import axios from "axios";
 
 const BASE_URL = "https://jsonplaceholder.typicode.com";
 
+export const fetchAllUserId = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/albums`);
+    if (response.status !== 200) {
+      throw new Error("Error fetching all albums");
+    }
+    const ids = new Set();
+    response.data.forEach((el) => ids.add(el.userId));
+    return Array.from(ids);
+  } catch (error) {
+    console.error("Error: ", error);
+    return [];
+  }
+};
+
 export const fetchAllAlbums = async () => {
   try {
     const response = await axios.get(`${BASE_URL}/albums`);
