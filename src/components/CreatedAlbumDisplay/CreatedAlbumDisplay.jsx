@@ -1,3 +1,4 @@
+import React from "react";
 import SingleAlbum from "../SingleAlbum/SingleAlbum";
 
 export default function CreatedAlbumDisplay({ createdAlbum, isError }) {
