@@ -1,3 +1,4 @@
+import React from "react";
 import SingleAlbumCSS from "./SingleAlbum.module.css";
 
 export default function SingleAlbum({ album }) {
