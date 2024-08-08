@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { fetchAlbumById } from "../../api";
 import SingleAlbum from "../SingleAlbum/SingleAlbum";
