@@ -1,8 +1,36 @@
 # React + Vite
+Vite: https://vitejs.dev/guide/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Tests:
 
-Currently, two official plugins are available:
+1. Vitest
+Link: https://v0.vitest.dev/guide/
+In package.json in “scripts”:
+  "test": "vitest",
+  "test:ui": "vitest --ui"
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+2. Vitest snippets plugin in vscode
+iv (Tab)
+d  (Tab)
+i  (Tab)
+To run test in terminal:
+  npm t
+Or
+  npm run test:ui
+
+
+3. Libraries
+- https://www.npmjs.com/package/@testing-library/react
+- https://www.npmjs.com/package/jsdom/v/1.0.0
+- https://www.npmjs.com/package/@testing-library/jest-dom
+
+
+4. In root create file (vitest.config.ts): 
+    import { defineConfig } from "vitest/config";
+
+	  export default defineConfig({
+	    test: {
+	      environment: 'jsdom'
+	    }
+  	});
