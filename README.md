@@ -27,6 +27,7 @@ Or
 
 
 4. In root create file (vitest.config.ts): 
+    ```
     import { defineConfig } from "vitest/config";
 
 	  export default defineConfig({
@@ -34,3 +35,4 @@ Or
 	      environment: 'jsdom'
 	    }
   	});
+    ```
